@@ -35,32 +35,9 @@ Used to sort and surface top ML decisions in the Rank view.
 
 ---
 
-## 📂 Project Structure
-
-src/
-├── app/
-│ ├── dashboard/page.tsx
-│ ├── ingest/page.tsx
-│ ├── rank/page.tsx
-│ ├── explain/page.tsx
-│ ├── analytics/page.tsx
-│ └── api/
-│ ├── health/route.ts
-│ ├── metrics/route.ts
-│ ├── decisions/route.ts
-│ └── analytics/route.ts
-│
-├── lib/
-│ ├── ranking.ts
-│ ├── metrics.ts
-│ └── mockData.ts
-
-
----
-
 ## ▶️ Running Locally
 
-``bash
+```bash
 npm install
 npm run dev
 
@@ -71,21 +48,6 @@ App Dashboard: http://localhost:3000/dashboard
 Health API: http://localhost:3000/api/health
 
 ⚠️ Note: Localhost works only while the dev server is running.
-
----
-
-🏗️ Architecture Overview
-
-Browser (UI)
-   ↓
-Next.js App Router (Pages)
-   ↓
-API Routes (/api/*)
-   ↓
-Core Logic (lib/)
-   ├─ ranking.ts
-   ├─ metrics.ts
-   └─ mockData.ts
 
 ---
 

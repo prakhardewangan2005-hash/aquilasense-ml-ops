@@ -40,21 +40,21 @@ weighted_score = score * 0.7 + confidence * 30 - latency_ms * 0.01
 ## 📁 Project Structure (inline)
 
 src/
-├── app/
-│   ├── dashboard/page.tsx
-│   ├── ingest/page.tsx
-│   ├── rank/page.tsx
-│   ├── explain/page.tsx
-│   ├── analytics/page.tsx
-│   └── api/
-│       ├── health/
-│       ├── metrics/
-│       ├── decisions/
-│       └── analytics/
-└── lib/
-    ├── ranking.ts
-    ├── metrics.ts
-    └── mockData.ts
+  app/
+    dashboard/page.tsx
+    ingest/page.tsx
+    rank/page.tsx
+    explain/page.tsx
+    analytics/page.tsx
+    api/
+      health/route.ts
+      metrics/route.ts
+      decisions/route.ts
+      analytics/route.ts
+  lib/
+    ranking.ts
+    metrics.ts
+    mockData.ts
 
 ---
 

@@ -25,7 +25,7 @@ Used to sort and surface top ML decisions in the Rank view.
 
 ---
 
-## 🧠 Architecture (Ultra-Short)
+## 🧠 Architecture 
 Next.js (App Router) serves the UI and exposes internal API routes (`/api/*`).  
 API routes run the ML decision + ranking logic, log each request, and compute metrics (p95 latency, accuracy, error-rate) that the dashboard consumes in real time.
 
